@@ -1,11 +1,10 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css"; // Tailwind entry
 
-import {createRoot} from 'react-dom/client';
-
-
-const App = () =>{
-  return <h1>Hello, Pylotix!</h1>
-}
-
-const container = document.getElementById('app');
-const root = createRoot(container);
-root.render(<App/>);
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
