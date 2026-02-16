@@ -1,0 +1,12 @@
+:root{--progress:0%}
+.squircle{border-radius:24px}
+.squircle-lg{border-radius:32px}
+.glass{background:rgba(255,255,255,0.02);backdrop-filter:blur(40px);border:1px solid rgba(255,255,255,0.05)}
+.text-display{font-size:clamp(2.5rem,6vw,5rem);line-height:0.9;font-weight:800;letter-spacing:-0.05em;text-transform:uppercase}
+.vector-card{position:relative;overflow:hidden;isolation:isolate}
+.vector-card::before{content:"";position:absolute;bottom:0;left:0;width:100%;height:var(--progress,0%);background:linear-gradient(180deg,rgba(99,102,241,0.15) 0%,rgba(99,102,241,0.05) 100%);transition:height 1.5s cubic-bezier(0.16,1,0.3,1);z-index:-1;border-top:1px solid rgba(99,102,241,0.3)}
+.vector-card:hover{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.2);transform:translateY(-4px)}
+@keyframes slideUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.animate-up{animation:slideUp 1s cubic-bezier(0.16,1,0.3,1) forwards}
+.spinner{width:60px;height:60px;border:3px solid rgba(255,255,255,0.1);border-top:3px solid #6366f1;border-radius:50%;animation:spin 1s linear infinite}
+@keyframes spin{100%{transform:rotate(360deg)}}

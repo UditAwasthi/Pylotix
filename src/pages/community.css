@@ -1,0 +1,11 @@
+:root{--bg:#09090b;--card:#121215;--accent:#ffffff;--border:rgba(255,255,255,0.08);--text-muted:#a1a1aa}
+body{background:var(--bg);color:#fff}
+.glass-card{background:rgba(18,18,21,0.8);backdrop-filter:blur(12px);border:1px solid var(--border);box-shadow:0 20px 40px -15px rgba(0,0,0,0.5);transition:transform 0.3s cubic-bezier(0.2,0,0.2,1),border-color 0.3s ease}
+.glass-card:hover{border-color:rgba(255,255,255,0.15)}
+.input-field{background:rgba(255,255,255,0.03);border:1px solid var(--border);transition:all 0.2s ease}
+.input-field:focus{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.3);outline:none}
+.btn-primary{background:var(--accent);color:#000;font-weight:600}
+.thread-line{position:relative;padding-left:2rem}
+.thread-line::before{content:"";position:absolute;left:0.75rem;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--border) 0%,transparent 100%)}
+.loading-shimmer{background:linear-gradient(90deg,#121215 25%,#1c1c21 50%,#121215 75%);background-size:200% 100%;animation:shimmer 1.5s infinite}
+@keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}

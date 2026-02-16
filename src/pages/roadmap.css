@@ -1,0 +1,38 @@
+:root {
+  --surface: #ffffff;
+  --background: #f5f5f7;
+  --ink: #1d1d1f;
+  --ink-light: #86868b;
+  --hanko-red: #d9381e;
+  --border-color: rgba(0, 0, 0, 0.06);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+  color: var(--ink);
+}
+
+h1, h2, h3, .zen-serif { font-family: "Shippori Mincho", serif; }
+
+.widget { background: var(--surface); border: 1px solid var(--border-color); border-radius: 32px; box-shadow: 0 10px 40px -10px rgba(0,0,0,0.04); position: relative; z-index: 10; }
+.label-caps { font-family: "Inter", sans-serif; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--ink-light); }
+.game-container{ position: relative; padding: 60px 0; max-width: 600px; margin: 0 auto; }
+#svg-path-container{ position: absolute; top:0; left:0; width:100%; height:100%; z-index:0; pointer-events:none }
+.path-line{ fill:none; stroke:#e5e5ea; stroke-width:3; stroke-linecap:round; stroke-linejoin:round }
+.level-row{ display:flex; justify-content:center; margin-bottom:80px; position:relative; z-index:10 }
+.level-row.left{ justify-content:flex-start; padding-left:5% }
+.level-row.right{ justify-content:flex-end; padding-right:5% }
+.level-row.center{ justify-content:center }
+.level-card{ background:var(--surface); border:1px solid var(--border-color); border-radius:24px; width:320px; position:relative; transition: transform 0.2s cubic-bezier(0.2,0.8,0.2,1), box-shadow 0.2s ease; box-shadow: 0 4px 20px rgba(0,0,0,0.03); cursor:pointer }
+.level-card:hover{ transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+.hanko-badge{ position:absolute; top:-16px; left:-16px; background:var(--surface); color:var(--hanko-red); width:48px; height:48px; display:flex; align-items:center; justify-content:center; font-family: "Shippori Mincho", serif; font-weight:700; font-size:1.25rem; transform: rotate(-3deg); border:2px solid var(--hanko-red); border-radius:12px; box-shadow: 0 4px 10px rgba(217,56,30,0.15); z-index:20 }
+.anchor-dot{ position:absolute; width:1px; height:1px; left:50%; top:50%; visibility:hidden }
+.zen-input{ background:#f5f5f7; border:1px solid transparent; transition: all 0.2s ease }
+.zen-input:focus{ background:var(--surface); border-color:#d2d2d7; box-shadow: 0 0 0 4px rgba(0,0,0,0.02) }
+.btn-modern{ background:var(--surface); color:var(--ink); border:1px solid #d2d2d7; transition: all 0.2s ease; border-radius:999px }
+.btn-modern:hover{ border-color:var(--ink) }
+.btn-modern.active{ background:var(--ink); color:var(--surface); border-color:var(--ink) }
+.btn-primary{ background:var(--ink); color:var(--surface); border-radius:999px; transition: all 0.2s ease }
+.btn-primary:hover{ background:#333336; transform:scale(1.02) }
+#loader.fixed{ display:none }

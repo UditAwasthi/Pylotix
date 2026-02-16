@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap");
+
+:root{
+  --bg: #ffffff;
+  --card: #f9f9f9;
+  --border: #f1f1f1;
+  --streak: #ff5733;
+  --mastery: #000000;
+}
+
+body { font-family: 'Plus Jakarta Sans', sans-serif; }
+.bento-grid{ display: grid; grid-template-columns: repeat(12,1fr); gap:20px; max-width:1400px; margin:0 auto; }
+.widget{ background:var(--card); border:1px solid var(--border); border-radius:32px; padding:24px; transition: all .3s cubic-bezier(.4,0,.2,1); }
+.label-caps{ font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:.12em; color:#a1a1aa; margin-bottom:12px; display:block; }
+.ring-container{ position:relative; width:100px; height:100px; }
+.progress-ring-circle{ transition: stroke-dashoffset 1s ease-in-out; transform: rotate(-90deg); transform-origin:50% 50%; }
+.heatmap{ display:grid; grid-template-columns: repeat(7,1fr); gap:4px; }
+.heat-cell{ aspect-ratio:1; background:#eee; border-radius:4px; }
+#courseList{ display:grid; grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); gap:20px; }
+
+@media (max-width:1100px){ .span-desktop-6{ grid-column: span 12 !important;} .span-desktop-3{ grid-column: span 6 !important;} }

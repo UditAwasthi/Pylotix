@@ -1,0 +1,6 @@
+body,html,#root{height:100%}
+.prod-root{position:relative;width:100%;height:100%;background:#0f110f;overflow:hidden}
+#ui-layer{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fce4ec}
+.label-zen{text-transform:uppercase;letter-spacing:0.6em;font-size:0.7rem;color:#f48fb1;margin-bottom:1rem}
+#timer-val{font-size:6rem}
+.hint{position:absolute;bottom:5%;font-size:0.7rem;opacity:0.4;letter-spacing:0.1em}

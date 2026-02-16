@@ -1,0 +1,21 @@
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.prod-root {
+  position: relative;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#ui-layer {
+  pointer-events: auto;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+}

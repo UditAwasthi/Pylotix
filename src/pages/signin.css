@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: -0.03em;
+}
+
+.squircle {
+  border-radius: 38px;
+}
+
+.input-squircle {
+  border-radius: 20px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.input-field {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.input-field:focus {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
